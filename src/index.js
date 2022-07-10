@@ -32,12 +32,8 @@ Diceware.get_word = function(wordlist, index) {
 	
 	var retval = wordlist[index];
 
-	if (retval) {
-		retval = retval[0].toUpperCase() + retval.slice(1);
-
-	} else {
+	if (!retval) {
 		retval = "((Word not found in wordlist)) ";
-
 	}
 
 	return(retval);
