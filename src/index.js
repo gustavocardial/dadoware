@@ -440,9 +440,9 @@ Diceware.go = function() {
 	var file = "wordlist-" + dice + "-dice.js";
 	if (dice == 5) {
 		//
-		// 5 Dice?  Let's use the EFF version.
+		// 5 Dice?  Let's use the pt-br version.
 		//
-		file = "wordlist-" + dice + "-dice-eff.js";
+		file = "wordlist-" + dice + "-dice-ptbr.js";
 	}
 
 	var js = "./assets/wordlist/" + file;
