@@ -124,8 +124,8 @@ Diceware.display_results = function(cb) {
 	jQuery(".results_words_value").hide().clone().appendTo(".results");
 	jQuery(".results").append("<br clear=\"all\" />");
 
-	jQuery(".results_phrase_key").hide().clone().appendTo(".results");
-	jQuery(".results_phrase_value").hide().clone().appendTo(".results");
+	//jQuery(".results_phrase_key").hide().clone().appendTo(".results");
+	//jQuery(".results_phrase_value").hide().clone().appendTo(".results");
 	jQuery(".results").append("<br clear=\"all\" />");
 
 	jQuery(".results_num_possible_key").hide().clone().appendTo(".results");
@@ -133,17 +133,17 @@ Diceware.display_results = function(cb) {
 
 	jQuery(".results .results_words_key").fadeIn(500, function() {
 		jQuery(".results .results_words_value").fadeIn(500, function() {
-		jQuery(".results .results_phrase_key").fadeIn(400, function() {
-		jQuery(".results .results_phrase_value").fadeIn(400, function() {
-		jQuery(".results .results_num_possible_key").fadeIn(300, function() {
-		jQuery(".results .results_num_possible_value").fadeIn(300, function() {
+		//jQuery(".results .results_phrase_key").fadeIn(400, function() {
+		//jQuery(".results .results_phrase_value").fadeIn(400, function() {
+		jQuery(".results .results_num_possible_key").fadeIn(400, function() {
+		jQuery(".results .results_num_possible_value").fadeIn(400, function() {
 			if (cb) {
 				cb();
 			}
 		});
 		});
-		});
-		});
+		//});
+		//});
 		});
 		});
 
