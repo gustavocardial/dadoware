@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Diceware: Create Secure Passwords You Can Actually Remember!</title>
+    <title>Dadoware | Senhas seguras e memorizáveis</title>
 
     <!-- Bootstrap -->
     <link href="./dist/bootstrap.min.css" rel="stylesheet">
@@ -21,17 +21,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<meta property="og:title" content="Diceware: Generate Secure Passwords You Can Actually Remember!" />
-	<meta property="og:description" content="Diceware is a password generator which creates passwords based on dicerolls keyed to a set of words." />
-	<meta property="og:url" content="https://diceware.dmuth.org/" />
-	<meta property="og:image" content="https://diceware.dmuth.org/assets/img/dice.jpg" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@dmuth" />
-	<meta name="twitter:url" content="https://diceware.dmuth.org/" />
-	<meta name="twitter:title" content="Diceware: Generate Secure Passwords You Can Actually Remember!" />
-	<meta name="twitter:description" content="Diceware is a password generator which creates passwords based on dicerolls keyed to a set of words." />
-	<meta name="twitter:image" content="https://diceware.dmuth.org/assets/img/dice.jpg" />
+	<meta property="og:title" content="Dadoware | Senhas seguras e memorizáveis" />
+	<meta property="og:description" content="Dadoware é um gerador de senhas que cria senhas seguras e (mais) fáceis de memorizar." />
+	<meta property="og:url" content="https://dadoware.com.br/" />
+	<meta property="og:image" content="https://dadoware.com.br/dice.jpg" />
 
   </head>
   <body>
@@ -43,9 +36,9 @@
 	><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
 <div class="starter-template">
-	<h1>Diceware Password Generator</h1>
+	<h1>Dadoware</h1>
 	<p class="lead">
-	Generate high-entropy passwords the easy way!
+	Gerador de senhas seguras e memorizáveis
 	</p>
 
 
@@ -96,23 +89,23 @@
 	<div class="dice_word dice_element" style="float: left; padding-left: 20px; padding-top: 25px; ">
 	</div>
 
-		<div class="results_words_key" >Your words are: </div>
+		<div class="results_words_key" >Sua senha é: </div>
 		<div class="results_words_value" ></div>
 
 		<div class="results_phrase_key" >Your passphrase is: </div>
 		<div class="results_phrase_value" ></div>
 
-		<div class="results_num_possible_key" ># of possible passwords: </div>
+		<div class="results_num_possible_key" ># de senhas possíveis: </div>
 		<div class="results_num_possible_value" ></div>
 
 	</div>
 
 	<div class="alert alert-danger bad_crypto" role="alert">
 	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-	<span class="sr-only">Error:</span>
-	Whoa there! Your browser doesn't have the getRandomValues() function.
-	This means that dice rolls you make <em>will not be cryptogrpahically secure!</em><br/>
-	Please try another browser. Otherwise, proceed at your own risk.
+	<span class="sr-only">Erro:</span>
+	Ei! Seu navegador não tem a função getRandomValues().
+	Isso significa que os dados que você lança neste site <em>não serão criptograficamente seguros!</em><br/>
+	Por favor, acesse o Dadoware com outro navegador.
 	</div>
 
 	</div> <!--/ row -->
@@ -123,7 +116,7 @@
 		<div class="message" ></div>
 
 		<h2 class="dice_num">
-		Number of Dice Rolls:
+		Número de Palavras:
 		</h2>
 
 		<div class="btn-group-lg" role="group" aria-label="...">
@@ -140,7 +133,7 @@
 		<a name="roll_dice_button" ></a>
 
 		<button type="button" class="btn btn-default btn-lg btn-primary" id="roll_dice">
-			<span class="glyphicon glyphicon-play" aria-hidden="true" ></span> Roll Dice!
+			<span class="glyphicon glyphicon-play" aria-hidden="true" ></span> Lançar dados!
 		</button>
 
 		</div>
@@ -159,7 +152,7 @@
 
 	<div class="row" style="text-align: left;">
 		<div class="col-md-12">
-<h3>About Diceware</h3>
+<h3>Sobre o Dadoware</h3>
 
 Weak passwords are a big flaw in computer security due to a lack of "entropy" 
 or randomness.  For example, how many times have you used the name of a pet or relative or street
@@ -338,7 +331,7 @@ an audit trail of all actions performed on that bucket.
 I am always considering what words I use in the wordlist.  I may opt to use shorter words in the future.
 
 
-<h3>Who built this? / Contact</h3>
+<h3>Créditos e contato</h3>
 
 My name is <a href="http://www.dmuth.org/">Douglas Muth</a>, and I am a software engineer in Philadelphia, PA.
 </p>
