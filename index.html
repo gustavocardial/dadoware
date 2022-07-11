@@ -152,7 +152,7 @@
 
 	<div class="row" style="text-align: left;">
 		<div class="col-md-12">
-<h3>Sobre o Dadoware</h3>
+<!--<h3>Sobre o Dadoware</h3>
 
 Weak passwords are a big flaw in computer security due to a lack of "entropy" 
 or randomness.  For example, how many times have you used the name of a pet or relative or street
@@ -183,7 +183,7 @@ For more information on Diceware:
 For more information on the entropy in passphrases, I'd like to refer you 
 <a href="https://xkcd.com/936/">to this XKCD comic</a>:
 </p>
-<a href="./assets/img/xkcd-password-strength.png"><img src="./assets/img/xkcd.png" class="responsive" /></a>
+<a href="./assets/img/xkcd.png"><img src="./assets/img/xkcd.png" class="responsive" /></a>
 </p>
 
 Diceware is a trademark of Arnold Reinhold.
@@ -281,22 +281,6 @@ Examples: <a href="?debug=4&skip_animation">4 dice rolls with no animation</a>
 <p/>
 
 
-<a name="wordlist"></a>
-<h3>FAQ: Can you tell me more about the list of words?</h3>
-
-For rolls of 5 dice, I am now using <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases"
-	>the worldlist from the EFF</a>. <a href="https://github.com/dmuth/diceware/issues/30">Substantial enhancements</a> have been made over the original list
-designed to improve usability without compromising security.
-</p>
-</p>
-
-
-I started off using <a href="http://world.std.com/~reinhold/diceware.wordlist.asc">the original wordlist</a>,
-but it contained a lot of symbols, punctuation, numbers, and 2 and 3 letter words.  I wanted to try a different
-wordlist with longer words, no non-alphabetic characters, and words more commonly used.  So then I tried
-<a href="http://norvig.com/ngrams/">Peter Norvig's</a> list of <a href="http://norvig.com/ngrams/count_1w.txt"
-		>the 1/3rd million most frequently used words</a>.  Peter Norvig's list is still in use for when 6 or 7 dice are rolled.
-
 <h3>FAQ: How many dice are rolled per word?</h3>
 
 The default is 5 dice, which allows for 7,776 different words per roll.  While I have some debug hooks
@@ -310,41 +294,19 @@ But for now, the functionality is there, if there is a desire for it.
 
 It is now!  The entire project can be downloaded and executed on a machine that is not connected to the Internet.
 I was able to pull this off due in part to uploading the code to an AWS S3 Bucket and then making that
-content available via <a href="https://aws.amazon.com/cloudfront/">CloudFront</a>.
-
-
-<h3>FAQ: How secure is the webserver this app is on?</h3>
-
-I used to host this app on my personal webserver, but didn't like that doing so increased my webserver's
-risk profile substantially.  I've since moved the app into AWS--the HTML, Javascript, and CSS resides in an 
-S3 bucket, and the content is served up via <a href="https://aws.amazon.com/cloudfront/">CloudFront</a> with
-an SSL certificate provided by <a href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager</a> for free.
-
-The S3 bucket has <a href="https://aws.amazon.com/cloudtrail/">CloudTrail</a> enabled on it, so that I have
-an audit trail of all actions performed on that bucket.
-
-
-<h3>FAQ: Why did you change the wordlist?</h3>
-
-</p>
-
-I am always considering what words I use in the wordlist.  I may opt to use shorter words in the future.
+content available via <a href="https://aws.amazon.com/cloudfront/">CloudFront</a>.-->
 
 
 <h3>Créditos e contato</h3>
 
-My name is <a href="http://www.dmuth.org/">Douglas Muth</a>, and I am a software engineer in Philadelphia, PA.
-</p>
+<p>O dadoware.com.br foi criado pelo Prof. Gustavo Cardial em um projeto do <a href="https://www.ifac.edu.br/">Instituto Federal de Educação, Ciência e Tecnologia do Acre</a> (Ifac).</p>
 
-There are several ways to get in touch with me:
-<ul>
-<li>Email to doug.muth AT gmail DOT com or dmuth AT dmuth DOT org</li>
-<li><a href="http://www.facebook.com/dmuth">Facebook</a> and <a href="http://twitter.com/dmuth">Twitter</a></li>
-<li><a href="http://www.linkedin.com/in/dmuth">LinkedIn</a></li>
-<li><a href="https://github.com/dmuth/diceware/issues">Opening an Issue in GitHub</a>
-</ul>
+<p>Este website consiste em uma versão brasileira do <a href="https://diceware.dmuth.org/">Diceware Password Generator</a>, de Douglas Muth. Alguns textos do projeto original foram traduzidos e outros serão reescritos, e foi utilizada a lista de palavras em português disponibilizada no <a href="https://github.com/thoughtworks/dadoware">repositório Github "dadoware", da Thoughtworks</a>.</p>
+ 
+<!--<p>A <a href="https://xkcd.com/936/">tirinha original sobre força de senhas</a> (xkcd) foi substituída pela versão em português disponibilizada pelo <a href="https://www.mariscotron.libertar.org/2017/05/29/senhas-faceis-para-voce-memorizar-e-que-nem-a-nsa-conseguira-desvendar/">Coletivo Anarcotecnológico Mar1sc0tron</a>.</p>-->
 
-Feel free to reach out to me if you have any comments, suggestions, bug reports, or wish to buy me a beer. 😃🍻
+<p>Você pode entrar em contato comigo pelo e-mail <em>gustavo.cardial [arroba] ifac [ponto] edu [ponto] br</em>.</p>
+
 <br/>
 <br/>
 <br/>
