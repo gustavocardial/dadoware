@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>[
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -152,166 +152,82 @@
 
 	<div class="row" style="text-align: left;">
 		<div class="col-md-12">
-<!--<h3>Sobre o Dadoware</h3>
 
-Weak passwords are a big flaw in computer security due to a lack of "entropy" 
-or randomness.  For example, how many times have you used the name of a pet or relative or street
-in a password, or perhaps the number "1"?  Not very random, is it? 😃
-Worse still, if
-passwords are reused between services, <a href="http://www.businessinsider.com/biggest-password-mistake-2014-8"
-	>that increases your security risk</a>.  This is not theoretical, <a href="http://www.techspot.com/news/65255-hackers-access-github-accounts-reusing-passwords-previous-leaks.html"
-	>this has already happened.</a>
-</p>
+<h3>Como usar o Dadoware</h3>
+<p>O <a href="https://dadoware.com.br">Dadoware.com.br</a> é uma ferramenta que te ajuda na criação de <strong>senhas seguras e memorizáveis</strong>.</p>
 
-Fact is, humans are terrible at remembering random combinations of letters and
-numbers, but we are great at remembering phrases of words. That's where Diceware comes in.
-</p>
+<p>As senhas geradas pelo <strong>Dadoware</strong> são compostas por uma sequência de palavras. Escolha o total de palavras que você quer na sua senha com os botões acima, então clique em "Criar senha". Em segundos, o sistema calculará e mostrará sua nova senha.</p>
 
-This Diceware web app is based on the proposal at <a href="http://world.std.com/~reinhold/diceware.html">http://world.std.com/~reinhold/diceware.html</a>
-wherein virtual dice are rolled 5 times, and the 5 digit number used against a lookup table of words.
-4 dice rolls gives you 4 random words which are easy for a human being to remember, yet have
-a high amount of entropy which makes them hard to crack.
-</p>
+<p>Caso fique insatisfeito com a senha gerada, não substitua palavras. Gere uma nova senha clicando novamente no botão.</p>
 
-For more information on Diceware:
-<ul>
-<li><a href="http://world.std.com/~reinhold/diceware.html">The Diceware Passphrase FAQ</a></li>
-<li><a href="http://world.std.com/~reinhold/diceware.wordlist.asc">Original Diceware word list</a> (This implementation uses <a href="#wordlist">a different wordlist...</a>)</li>
-<li><a href="http://world.std.com/~reinhold/diceware.txt">Diceware for Passphrase Generation and Other Cryptographic Applications</a></li>
-</ul>
+<p>Esta ferramenta é ideal para situações em que precisa-se de uma senha única e forte, como a senha-mestra de um gerenciador de senhas, uma chave criptográfica ou mesmo a senha de um perfil em rede social que tenha muito valor, por exemplo.</p>
 
-For more information on the entropy in passphrases, I'd like to refer you 
-<a href="https://xkcd.com/936/">to this XKCD comic</a>:
-</p>
-<a href="./assets/img/xkcd.png"><img src="./assets/img/xkcd.png" class="responsive" /></a>
-</p>
+<h3>Quantas palavras minha senha deve ter para ser segura?</h3>
 
-Diceware is a trademark of Arnold Reinhold.
-</p>
+<p>Depende. Para a maioria das aplicações de autenticação online, uma senha de 6 palavras é suficiente. Se você quer uma senha para proteger sistemas que armazenam dinheiro, como Bitcoin, use pelo menos 8 palavras.</p>
 
-<h3>FAQ: Why not use LastPass or a similar product?</h3>
+<h3>Dicas para memorizar a senha</h3>
 
-By all means, feel free to do so.  LastPass is an excellent product and I highly recommend it.
-That said, there's no reason that Diceware cannot be used concurrently with LastPass.  Personally,
-I like passwords that I can remember.
+<p>Uma boa forma de memorização é imaginar uma situação ou estória que envolva as palavras da senha.</p>
 
+<p>Se sua senha for muito longa, por exemplo com 8 palavras, você pode tentar memorizá-la como duas senhas de 4 palavras cada.</p>
 
-<h3>FAQ: What are some good use cases for Diceware?</h3>
+<p>Contrário ao senso comum, anotar a senha num pedaço de papel e guardá-lo para consulta por alguns dias pode facilitar a memorização. Mas atenção: cuide bem da anotação, e ao julgar que decorou a senha, faça o descarte adequado.</p>
 
-<ul>
-<li>Smart TVs: Diceware is a great fit for password entry on Smart TVs, or any other environment where typing non-alphanumerics is a challenge.</li>
-<li>Work/Shared Computer: Let's say you're using a computer that you do not own, and want to log into a personal account.  You may not want to install LastPass on that machine, so if you've generated that account's password with Diceware, it will be much easier to type in on the keyboard. </li>
-</ul>
+<h3>Por que as senhas do Dadoware são seguras?</h3>
 
+<p>Senhas fracas podem ser facilmente descobertas por meio de adivinhação, dedução, ou pelo emprego de programas de computador. Esses programas realizam a tentativa sucessiva de milhões de senhas por segundo, até que a senha correta seja encontrada.</p>
 
-<h3>FAQ: What are some BAD use cases for Diceware?</h3>
+<p>Uma senha é considerada segura se for resistente a esses tipos de ataque. Ou seja: ela não pode ser adivinhável, e um computador não deve conseguir chegar a ela mesmo após milhões de tentativas.</p>
 
-You should not use Diceware in any cases where it is highly likely an attacker can get a copy
-of your encrypted password and use high-volume cracking attempts against it.
-A bad case--possibly the worst case--for using Diceware would be to secure your BitCoin wallet,
-because all BitCoin nodes have a copy of the BitCoin Ledger, and an attacker 
-<a href="https://umanovskis.se/blog/post/leaky-faucet/">could attempt password cracking your wallet</a>.
+<p>Para conseguir isso, a senha deve atender aos dois critérios seguintes.</p>
 
+<ol>
+	<li>Ser longa;
+	<li>Ser aleatória.
+</ol>
 
-<h3>FAQ: Should I add numbers or an exclamation point to my password?</h3>
+<p>As senhas geradas pelo Dadoware são seguras porque atendem a esses dois critérios.</p>
 
-No, don't do that.  The short answer is that length makes your password more secure than special characters do.  But don't take it from me, <a href="https://www.engadget.com/2017-08-08-nist-new-password-guidelines.html">take it from the man who put us through password hell</a> and regrets every minute of it.
-</p>
+<p>O primeiro, <em>ser longa</em>, nos garante que mesmo um computador extremamente veloz não conseguiria testar senhas suficientes a ponto de chegar em nossa senha. Já o segundo critério — ser aleatória — implica na ausência de padrões, que se existirem, diminuem a quantidade de senhas que esses programas de computador precisariam tentar, enfraquecendo ou até anulando a primeira vantagem.</p>
 
-The NIST has since released new password creation guidelines in a document which is rather lengthly, <a href="https://auth0.com/blog/dont-pass-on-the-new-nist-password-guidelines/">but summarized nicely here</a>.
+<p>Diante disso, é possível perceber que <strong>as pessoas têm uma ideia errada ideia do que é uma senha segura</strong>. Em geral, acham que basta misturar algumas letras, símbolos e números. Mas essa prática costuma gerar senhas fáceis de os computadores descobrirem, e difíceis de seres humanos memorizarem.</p>
 
+<p>Essa ideia é ilustrada na tirinha abaixo.</p>
 
-<h3>"I can't believe you're sending passwords over the Internet!"</h3>
+<img src="https://raw.githubusercontent.com/gustavocardial/dadoware/main/assets/img/xkcd.png">
 
-<a href="assets/img/dude-chill-just-chill.gif">Chill</a>.  I'm not.  Passwords are generated within your browser and do not leave it (unless you copy them out yourself).
+<h3>Aleatória, mas memorizável</h3>
 
+<p>De nada adiantaria criar uma senha segura, mas que fosse de difícil memorização, pois seu uso seria impraticável. Assim, as senhas do Dadoware não se baseiam em sequências de caracteres sem sentido, mas numa sequência de palavras que são sorteadas a partir de uma lista de 7.776 palavras.</p>
 
-<h3>FAQ: Are these dice rolls cryptographically secure?</h3>
+<h3>"Dadoware"? Por que esse nome?</h3>
 
-Yes, insofar as we're using the 
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">getRandomValues() function in Javascript</a>, 
-and you trust that your
-browser and computer have not been compromised or otherwise tampered with.  Keep in mind that a not-so-theoretical attack would be for an attacker to compromise the random number generator on your computer so that
-anything that is encrypted (or passkeys generated) would be suspectible to less intense cryptoanalysis.
+<p>A segurança das senhas geradas por este método depende da <strong>escolha verdadeiramente aleatória das palavras</strong>. Por isso, o método Dadoware original — o <em>Diceware</em> (em inglês) —, propõe que o sorteio dessas palavras seja feito com a rolagem de dados físicos.</p>
 
+<p>Como isso não é prático, a fim de democratizar a utilização do método, este site disponibiliza um sorteador de palavras <em>criptograficamente seguro</em>. Em outras palavras, isso significa que o sorteio é feito por um programa de computador, e de forma tão aleatória quanto se fosse realizado com dados reais.</p>
 
-<h3>FAQ: How secure is the Diceware approach?</h3>
+<h3>O site tem acesso à minha senha?</h3>
 
-If you want the absolute worst password security, go right ahead and use the same password everywhere so that when one service is cracked, an attacker can compromise every account you own. (Plz don't do that)</p>
-
-If you want the absolute best security, choose a different password of completely random charcters for each service.</p>
-
-If you want a middle of the road approach that offers medium security, Diceware is the way to go.  I wrote it for people like <a href="https://www.flickr.com/photos/dmuth/48499048131/in/photosof-dmuth/">my parents</a>, who might struggle with a password manager or not want to enter random characters when trying to enter their Apple password into their Apple TV, or want a password to log into their Mac that they can actually remember and not have to write down.</p>
-
-
-<h3>FAQ: Is the source available?</h3>
-
-Yep!  You can grab a copy at <a href="https://github.com/dmuth/diceware">https://github.com/dmuth/diceware</a>
-</p>
-
-In fact, if you are nervous about generating a password on a website (even though the password is actually 
-generated by Javascript in your browser), I would encourage you to download the source and run it locally.
-</p>
-
-If you do want to run Diceware locally, just download the source and run a webserver in Python with
-this command: <tt style="background-color: #dddddd; ">python -m SimpleHTTPServer 8000</tt>.  You will then able to access DiceWare at 
-<a href="http://localhost:8000/">http://localhost:8000/</a>.
-
-<a name="debug"></a>
-<h3>FAQ: Is there a way to roll the dice automatically?</h3>
-
-Yes, there is.  Append "?debug=n" to the URL to automatically roll the dice N times.
-<p/>
-<p/>
-
-Examples: <a href="?debug=4">Roll the Dice 4 times.</a>
-<a href="?debug=5">Or 5 times.</a> 
-<a href="?debug=6">Or even 6 times!</a>
-<p/>
-
-
-<a name="skip_animation"></a>
-<h3>FAQ: Is there a way to skip the dice animation?</h3>
-
-Yeah.  Append "?skip_animation" to the URL to not display the dice animation
-<p/>
-<p/>
-
-Examples: <a href="?debug=4&skip_animation">4 dice rolls with no animation</a>
-<p/>
-
-
-<h3>FAQ: How many dice are rolled per word?</h3>
-
-The default is 5 dice, which allows for 7,776 different words per roll.  While I have some debug hooks
-in the code so that you can run Diceware with <a href="?dice=6">6 dice per word</a> and 
-<a href="?dice=7">7 dice per word</a> (for 46,655 and 279,935 possible words, respectively), the words
-used become more obscure, which makes them more difficult to remember, so I'm not entirely sure that is a good thing.
-But for now, the functionality is there, if there is a desire for it.
-
-
-<h3>FAQ: Is Air-gapped Operation Supported?</h3>
-
-It is now!  The entire project can be downloaded and executed on a machine that is not connected to the Internet.
-I was able to pull this off due in part to uploading the code to an AWS S3 Bucket and then making that
-content available via <a href="https://aws.amazon.com/cloudfront/">CloudFront</a>.-->
+<p>Não. As senhas são geradas diretamente no seu navegador.</p>
 
 <h3>Minha senha precisa ter espaços?</h3>
 
-<p>Se possível, use os espaços. Pois se a senha gerada for curta demais, remover seus espaços <em>pode</em> torná-la mais fraca.</p>
+<p>Se possível, use os espaços. Caso a senha gerada seja curta demais, remover seus espaços pode torná-la mais fraca.</p>
 
+<h3>Considerações técnicas</h3>
+
+<p>Este website será atualizado com mais considerações a respeito da escolha de senhas criptograficamente seguras, direcionadas especificamente ao público técnico.</p>
 
 <h3>Créditos e contato</h3>
 
-<p>O dadoware.com.br foi criado pelo Prof. Gustavo Cardial em um projeto do <a href="https://www.ifac.edu.br/">Instituto Federal de Educação, Ciência e Tecnologia do Acre</a> (Ifac).</p>
+<p>O dadoware.com.br foi disponibilizado pelo Prof. Gustavo Cardial em um projeto do <a href="https://www.ifac.edu.br">Instituto Federal de Educação, Ciência e Tecnologia do Acre (Ifac)</a>.</p>
 
-<p>Este website consiste em uma versão brasileira do <a href="https://diceware.dmuth.org/">Diceware Password Generator</a>, de Douglas Muth. Alguns textos do projeto original foram traduzidos, outros foram substituídos. Para compor as senhas foi utilizada a lista de palavras em português disponibilizada no <a href="https://github.com/thoughtworks/dadoware">repositório Github "dadoware", da Thoughtworks</a>.</p>
- 
-<!--<p>A <a href="https://xkcd.com/936/">tirinha original sobre força de senhas</a> (xkcd) foi substituída pela versão em português disponibilizada pelo <a href="https://www.mariscotron.libertar.org/2017/05/29/senhas-faceis-para-voce-memorizar-e-que-nem-a-nsa-conseguira-desvendar/">Coletivo Anarcotecnológico Mar1sc0tron</a>.</p>-->
+<p>Este website consiste em uma versão brasileira do website <a href="https://diceware.dmuth.org/">Diceware Password Generator</a>, de Douglas Muth. O software gerador de senhas e o código do website do projeto original foram mantidos, e os textos da página foram reescritos e substituídos. Para compor as senhas foi utilizada a lista de palavras em português disponibilizada no <a href="https://github.com/thoughtworks/dadoware">repositório Github "dadoware", da Thoughtworks</a>. A primeira letra de cada palavra foi transformada em letra minúscula, seguindo a documentação da técnica original. A <a href="https://xkcd.com/936/">tirinha original sobre força de senhas</a> (xkcd) foi substituída pela versão em português disponibilizada pelo <a href="https://www.mariscotron.libertar.org/2017/05/29/senhas-faceis-para-voce-memorizar-e-que-nem-a-nsa-conseguira-desvendar/">Coletivo Anarcotecnológico Mar1sc0tron</a>.</p>
 
 <p>Todo esse trabalho é baseado na <a href="https://theworld.com/~reinhold/diceware.html">técnica Diceware de criação de senhas</a>, originalmente proposta por Arnold G. Reinhold.</p>
-			
-<p>Você pode entrar em contato comigo pelo e-mail <em>gustavo.cardial [arroba] ifac [ponto] edu [ponto] br</em>.</p>
+
+<p>Você pode entrar em contato comigo pelo e-mail gustavo.cardial [arroba] ifac [ponto] edu [ponto] br.</p>
 
 <br/>
 <br/>
